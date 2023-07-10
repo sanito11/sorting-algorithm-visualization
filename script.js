@@ -15,7 +15,7 @@ let generateBtn = document.querySelector('#generateBtn')
 let sortBtn = document.querySelector('#sortBtn')
 
 let arr = [], bars = []
-let speed = 100
+let speed = 250
 
 elementsInput.addEventListener('input',
     () => {
