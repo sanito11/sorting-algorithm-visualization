@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+.visualizer {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-color: rgba(3, 79, 53, 0.404);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+}
+
+.bar-container {
+    display: flex;
+    background-color: blue;
+    width: 95%;
+    height: 60vh;
+    padding-top: 1%;
+    align-items: flex-end;
+    justify-content: space-evenly;
+}
+
+.bar {
+    background-color: bisque;
+    position: relative;
+    transition: background-color ease-in-out 300ms;
+}
+
+.controls {
+    display: flex;
+    background-color: yellow;
+    width: 95%;
+    height: 30vh;
+}
+
+h3 {
+    text-align: center;
+}
+
+
+
+label {
+    font-size: 12px;
+}
+
+.range-inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    padding: 0.5rem;
+    width: 50%;
+}
+
+.sorting-inputs {
+    width: 50%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    border-left: 2px solid rgb(39, 39, 39);
+}
+
+.sorting-inputs h3 {
+    padding-bottom: 2%;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 10%;
+    width: 50%;
+
+}
+
+.btn-container button {
+    width: 50%;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    transition: all ease-in 200ms;
+}
+
+button:not(:disabled):hover {
+    filter: brightness(0.8);
+    border: 1px solid black;
+}
+
+
+input[type="range"] {
+    width: 60%;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #04AA6D;
+    cursor: pointer;
+}
+
+select {
+    width: 50%;
+}
+
+.current {
+    background-color: red;
+}
+
+.sorted {
+    background-color: cornflowerblue;
+}
+
+.comparison {
+    background-color: forestgreen;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualizer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="visualizer">
+        <div class="bar-container"></div>
+        <div class="controls">
+            <div class="range-inputs">
+                <h3>Element Options</h4>
+                    <label for="elements" id="elementsLabel">Number of Elements (<strong>5</strong>)</label>
+                    <input type="range" name="elements" id="elements" value="5" min="5" max="200">
+                    <label for="minimum" id="minLabel">Minimum Value (<strong>1</strong>)</label>
+                    <input type="range" name="minimum" id="minimum" value="1" min="1" max="20000">
+                    <label for="maximum" id="maxLabel">Maximum Value (<strong>20000</strong>)</label>
+                    <input type="range" name="maximum" id="maximum" value="20000" min="1" max="20000">
+            </div>
+            <div class="sorting-inputs">
+                <h3>Sorting Options</h3>
+                <label for="sort">Sorting Algorithm:</label>
+                <select name="sort" id="sortSelection">
+                    <option>Bubble Sort</option>
+                    <option>Comb Sort</option>
+                    <option>Heap Sort</option>
+                    <option>Insertion Sort</option>
+                    <option>Quick Sort</option>
+                    <option>Selection Sort</option>
+                    <option>Shell Sort</option>
+                </select>
+                <div class="btn-container">
+                    <button id="sortBtn" disabled>Sort Array</button>
+                    <button id="generateBtn">New Array</button>
+                </div>
+                <label for="speed" id="speed">Animation Speed</label>
+                <input type="range" name="speed" id="speedRange" class="speed-range" min="1" max="200" value="100">
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>
