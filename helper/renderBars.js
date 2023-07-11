@@ -7,7 +7,7 @@ export default function renderBars(bars, container) {
             <div class="bar" 
             style="height: ${bars[i] / highest * 100}%; 
             width: ${90 / bars.length}%; 
-            background-color: ${i % 2 == 0 ? "yellow-orange" : "pink"};">
+            background-color: "yellow-orange";>
             </div>
         `
     }
